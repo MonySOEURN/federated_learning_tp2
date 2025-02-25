@@ -30,22 +30,11 @@ To get started, clone the TP2 folder from the lab repository.
 
 ### EXERCISE 4.1 - The Impact of Data Heterogeneity
 
-**Objective**: Demonstrate that an increase in the number of local epochs can potentially degrade FedAvg’s performance under non-IID data distributions.
-
-- **Preliminary question**: What non-IID data distribution means? Provide examples.
-- **Pathological Split**: Familiarize yourself with the concept of “pathological split” as explained in [Communication-Efficient Learning of Deep Networks from Decentralized Data (Section 3)](https://arxiv.org/abs/1602.05629). The `pathological_non_iid_split` function has been implemented for you in `data/mnist/utils.py`. Review this method and summarize it briefly.
-- **Experiments**: Run the `generate_data.py` script with the `--non_iid` flag and set `--n_classes_per_client=2` to partition the MNIST dataset in a non-IID fashion. 
-- **Plot**: Run experiments to observe how varying the number of local epochs (e.g., 1, 5, 10, 50, 100) influences the model's test accuracy under non-IID data distribution. Plot the relationship between the number of local epochs and test accuracy.
-- **Interpretation**: Briefly comment the results. Were these results expected?
+** Skiped **
 
 ### EXERCISE 4.2 - Tackling Data Heterogeneity with FedProx
 
-**Objective**: Understand how the FedProx algorithm addresses the challenges posed by data heterogeneity in federated learning and compare its performance with the FedAvg algorithm.
-
-- **FedProx Overview**: FedProx modifies the local training objective by introducing a proximal term, which aims to reduce local model drift by penalizing significant deviations from the global model. Review the FedProx algorithm [Federated Optimization in Heterogeneous Networks (Algorithm 2)](https://arxiv.org/abs/1812.06127) and our implementation of the ProxSGD class in `utils/optim.py`.
-- **Experiments**: To initiate FedProx experiments, run the `train.py` script with `local_optimizer = "prox_sgd"` and set the proximal term coefficient `mu = 2`.
-- **Plot**: Replicate the plot from Exercise 4.1, this time evaluating FedProx algorithm.
-- **Analysis**: Discuss the observed differences in performance between FedAvg and FedProx. Are there specific configurations (e.g., number of local epochs) where FedProx particularly outperforms FedAvg?
+** Skiped **
 
 ---
 
